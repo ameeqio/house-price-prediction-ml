@@ -1,0 +1,10 @@
+Property	                          Value
+Number of rows	                        2930
+Number of columns	                     82
+Numerical columns	                     ?
+Categorical columns	                     ?
+Target column	                        SalePrice
+Duplicate rows	                         Not present
+Missing values	                          Yes
+Outliers	                            Present
+Highly skewed features	               To investigate
