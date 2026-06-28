@@ -8,3 +8,31 @@ Duplicate rows	                         Not present
 Missing values	                          Yes
 Outliers	                            Present
 Highly skewed features	               To investigate
+
+
+| Feature        | Meaning                           | Correlation |          Makes sense?         |
+| -------------- | --------------------------------- | ----------: | :---------------------------: |
+| Overall Qual   | Overall material & finish quality |       0.799 |          ✅ Very much          |
+| Gr Liv Area    | Above-ground living area          |       0.707 |    ✅ Bigger homes cost more   |
+| Garage Cars    | Garage capacity (cars)            |       0.648 |               ✅               |
+| Garage Area    | Garage size                       |       0.640 |               ✅               |
+| Total Bsmt SF  | Basement area                     |       0.632 |               ✅               |
+| 1st Flr SF     | First floor area                  |       0.622 |               ✅               |
+| Year Built     | Construction year                 |       0.558 | ✅ Newer homes often cost more |
+| Full Bath      | Number of bathrooms               |       0.546 |               ✅               |
+| Year Remod/Add | Last remodel year                 |       0.533 |               ✅               |
+| Garage Yr Blt  | Garage construction year          |       0.527 |               ✅               |
+| Mas Vnr Area   | Masonry veneer area               |       0.508 |   ✅ Premium exterior finish   |
+| TotRms AbvGrd  | Rooms above ground                |       0.495 |               ✅               |
+| Fireplaces     | Number of fireplaces              |       0.475 |               ✅               |
+
+
+PID : house number, no use in prediction (drop it)
+Order : just the numbering of houses, no use in prediction (drop it)
+
+For all 157 rows where Garage Area == 0, the related garage attributes are also missing, strongly indicating that these houses do not have a garage. 
+The remaining two missing values in garage-related columns appear to be genuine missing data. 
+Garage Qual missing value : 2
+Garage Cond missing value : 2
+Garage Yr Blt missing value : 2
+Garage Finish missing value : 2
