@@ -1,8 +1,8 @@
 Property	                          Value
 Number of rows	                        2930
 Number of columns	                     82
-Numerical columns	                     ?
-Categorical columns	                     ?
+Numerical columns	                     identifies
+Categorical columns	                     identified
 Target column	                        SalePrice
 Duplicate rows	                         Not present
 Missing values	                          Yes
@@ -62,7 +62,7 @@ pools will be priced higher (intuition)
 - only 106 houses are having misc features (shed, 2nd garage, elevator, tennisCourt) indicating that these aspects are very
 rare in this dataset
 
-- NridgHT, noRidge : Neighborhoods with outliers price > 500k
+- NridgHT, noRidge : Neighborhoods with outliers price > 500k (normal)
 - stoneBr : Neighborhood with max price = 600k around
 
 - Fence : minPr has extreme outlier (>700k) while gdPr has outliers (>450k)

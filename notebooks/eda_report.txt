@@ -1,0 +1,33 @@
+# EDA Summary
+
+## Dataset
+- 2930 observations
+- 81 features + target (sale price)
+
+## Missing Values
+- Garage-related NaNs mostly indicate no garage.
+- Basement-related NaNs mostly indicate no basement.
+- Pool QC missing indicates no pool.
+- Fence missing indicates no fence.
+- This trend is mostly followed in this dataset!
+
+## Target
+- SalePrice is positively skewed. (~1.75)
+- Luxury houses create a long right tail.
+
+## Numerical Features
+- Overall Qual has the strongest positive correlation.
+- Living area features strongly influence price.
+- Garage Cars and Garage Area may be collinear.
+
+## Categorical Features
+- Neighborhood strongly affects SalePrice.
+- Some exterior materials appear in high-priced houses.
+
+## Data Quality
+- Garage Yr Blt contains one impossible value (2207).
+
+## Potential Preprocessing Decisions
+- Handle semantic missing values.
+- Investigate log transform for SalePrice.
+- Encode ordinal and nominal features differently.
