@@ -70,3 +70,9 @@ rare in this dataset
 - Exterior : vinylSd, wd sdng, hdboard, metal sd, imstucc (ext 2) these are having a fair amount of outliers
 
 - GarageYR : possible data-entry error of 2207 (year built - 2006, year sold - 2007)
+
+
+
+DATA PREPROCESSING -
+ 
+1. missing value handling

@@ -1,1 +1,4 @@
 tasks.todo
+__pycache__/
+*.py[cod]
+
