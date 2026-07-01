@@ -7,9 +7,7 @@ class FeatureEngineer:
         self.df: pd.DataFrame = df.copy()
 
     def drop_ftrs(self) -> FeatureEngineer:
-        for ftr in drop_features:
-            self.df.drop(ftr, axis = 1, inplace = True)
-
+        self.df.drop(columns=drop_features, inplace=True)
         return self
 
     def fix_garage_yr(self) -> FeatureEngineer:
@@ -32,6 +30,8 @@ class FeatureEngineer:
         for new_ftr, (ftr1, ftr2) in age_features.items():
             self.df[new_ftr] = self.df[ftr1] - self.df[ftr2]
 
+        self.df['GarageAge'] = self.df['GarageAge'].fillna(-1)
+        self.df.drop("Garage Yr Blt", axis = 1, inplace = True)
         return self
     
     def transform(self) -> pd.DataFrame:
@@ -43,3 +43,5 @@ class FeatureEngineer:
                 .eng_age_ftrs()
                 .df
         )
+    
+
