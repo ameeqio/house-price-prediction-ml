@@ -75,4 +75,10 @@ rare in this dataset
 
 DATA PREPROCESSING -
  
-1. missing value handling
+SO KIND OF WORKFLOW FOR PRE-PROCESSING PART WILL BE -
+1. handle missing values ✅
+2. feature engineering ✅
+3. feature encoding (one-hot, label, ordinal encoding)
+4. feature transformation (if-possible)
+5. feature scaling
+
